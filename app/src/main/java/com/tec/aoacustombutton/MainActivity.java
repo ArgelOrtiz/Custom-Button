@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -22,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         customImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Snackbar.make(v,"Button pushed",Snackbar.LENGTH_LONG).show();
             }
         });
     }
